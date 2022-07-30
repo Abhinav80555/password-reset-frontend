@@ -33,8 +33,8 @@ const Main = () => {
 			  .then(() => getUsers())
 		  };
 		  const Delete={
-			marginLeft: "auto",
-			color:"red"
+			marginRight: "auto",
+			backgroundColor:"Red"
 		  }
 
 	return (
@@ -83,9 +83,6 @@ function Cards({user,deleteButton}){
 						User Name : {user.firstName} {user.lastName}
                         </h6>
 						<ul>  
-					    <li className="card-text">
-							Signup Count : {user.clickCountSignup}
-						</li> 
 						<li className="card-text">
 							User Login Count     : {user.clickCountLogin}
 						</li>
